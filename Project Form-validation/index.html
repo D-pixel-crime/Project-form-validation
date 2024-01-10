@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+
+    <div class="form-validation">
+
+        <div class="welcome">
+            <h1>Sign-Up!</h1>
+        </div>
+
+        <div class="last-submit" style="transition: 2s;"></div>
+        <div class="form-container">
+            <form method="post">
+                <div class="name">
+                    <label for="full-name">Full Name: </label>
+                    <input type="text" name="full-name" id="full-name" placeholder="Name">
+                    <!-- 'p' are hidden initially, only visible when criterias are not met -->
+                    <p class="criteria name-criteria">*Must have atleast 5 letters</p>
+                </div>
+                <div class="email-container">
+                    <label for="email">E-mail: </label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                    <p class="criteria mail-criteria">*Invalid e-mail format</p>
+                </div>
+                <div class="number">
+                    <label for="phone-number">Phone Number: </label>
+                    <input type="tel" name="phone-number" id="phone-number" placeholder="Phone">
+                    <p class="criteria phone-criteria">*Must be a 10-digit number and cannot be '0123456789'</p>
+                </div>
+                <div class="pass">
+                    <label for="password">Password: </label>
+                    <input type="password" name="password" id="password" placeholder="Password">
+                    <p class="criteria pass-criteria">*Password is not strong
+                    </p>
+                </div>
+                <div class="conf">
+                    <label for="confirm-password">Confirm Password: </label>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm">
+                    <p class="criteria confirm-criteria">*Password doesn't match</p>
+                </div>
+                <div class="button-container">
+                    <button type="reset" class="reset">Clear <i class="fa-solid fa-trash-can"
+                            style="margin-left: 0.2rem;"></i></button>
+                    <button type="submit" class="submit"> <i class="fa-solid fa-check"
+                            style="margin-right: 0.2rem;"></i>Signup</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/c6ef4980e8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
