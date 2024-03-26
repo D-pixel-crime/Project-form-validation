@@ -8,6 +8,7 @@ Form Validation is a simple web application built using HTML, CSS, and JavaScrip
 - **Real-time Feedback**: Provides instant feedback to users about the validity of their input.
 - **Error Messaging**: Displays clear error messages to guide users in correcting their input.
 - **Submit Button State**: Disables the submit button until all input fields are valid.
+- **Responsive Design**: Optimized for various devices, including desktops, tablets, and mobile phones.
 
 ## Technologies Used
 
